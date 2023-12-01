@@ -6,7 +6,7 @@ SET @userId = LAST_INSERT_ID();
 
 -- Insert sample data into the cv table
 INSERT INTO cv (fname, lname, title, gender, dob, location, objective, hobby, img, userID) 
-VALUES ('John', 'Doe', 'Web Developer', 'Male', '1990-01-01', 'New York', 'A passionate web developer with extensive experience...', 'Reading, Coding', 'john_doe.jpg', @userId);
+VALUES ('John', 'Doe', 'Web Developer', 'Male', '1990-01-01', 'New York', 'A passionate web developer with extensive experience...', 'Reading, Coding', '/images/avatar.jpg', @userId);
 
 -- Get the ID of the inserted CV
 SET @cvId = LAST_INSERT_ID();
