@@ -1,0 +1,50 @@
+-- Insert sample data into the user table
+INSERT INTO user (username, password) VALUES ('john_doe', 'password123');
+
+-- Get the ID of the inserted user
+SET @userId = LAST_INSERT_ID();
+
+-- Insert sample data into the cv table
+INSERT INTO cv (fname, lname, title, gender, dob, location, objective, hobby, img, userID) 
+VALUES ('John', 'Doe', 'Web Developer', 'Male', '1990-01-01', 'New York', 'A passionate web developer with extensive experience...', 'Reading, Coding', '/images/avatar.jpg', @userId);
+
+-- Get the ID of the inserted CV
+SET @cvId = LAST_INSERT_ID();
+
+-- Insert sample data into the phoneNumber table
+INSERT INTO phoneNumber (numbers, cvID) VALUES ('123456789', @cvId), ('123456789', @cvId);
+
+-- Insert sample data into the emailAddress table
+INSERT INTO emailAddress (email, cvID) VALUES ('john.doe@email.com', @cvId), ('ade.doe@email.com', @cvId);
+
+-- Insert sample data into the socialLink table
+INSERT INTO socialLink (link, cvID) VALUES ('https://linkedin.com/johndoe', @cvId), ('https://linkedin.com/johndoe', @cvId);
+
+-- Insert sample data into the languages table
+INSERT INTO languages (lang, cvID) VALUES ('English', @cvId);
+INSERT INTO languages (lang, cvID) VALUES ('Spanish', @cvId);
+
+-- Insert sample data into the degree table
+INSERT INTO degree (school, major, gpa, startYear, endYear, cvID)
+VALUES ('University of Something', 'Computer Science', 3.5, 2010, 2014, @cvId),
+('University of Somethidng', 'Math Science', 3.5, 2010, 2014, @cvId);
+
+-- Insert sample data into the workExperience table
+INSERT INTO workExperience (company, title, detail, startYear, endYear, cvID) 
+VALUES ('Tech Company', 'Software Developer', 'Developed web applications using PHP and MySQL', 2015, 2020, @cvId),
+('Zalo Company', 'Software Developer', 'Developed web applications using Python', 2020, 2023, @cvId);
+
+-- Insert sample data into the activity table
+INSERT INTO activity (title, detail, startYear, endYear, cvID) 
+VALUES ('Coding Club', 'Organized coding competitions and workshops', 2012, 2014, @cvId),
+ ('Football', 'Fun time with the boys', 2012, 2014, @cvId);
+
+-- Insert sample data into the certification table
+INSERT INTO certification (year, detail, cvID) 
+VALUES (2018, 'Certified Web Developer', @cvId),
+ (2018, 'IELTS', @cvId);
+
+-- Insert sample data into the award table
+INSERT INTO award (year, detail, cvID) 
+VALUES (2019, 'Best Coder Award', @cvId),
+(2023, 'Best Gamer', @cvId);
