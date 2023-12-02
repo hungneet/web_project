@@ -133,8 +133,12 @@ footer a:not(.nav-link) {
   .skills-section,
   .work-experience-section,
   .education-section,
-  .contant-section {
+  .contant-section
+  .certification-section,
+  .awards-section,
+  .activity-section {
     padding: 1.5rem 5rem 2rem !important; }
   .page-break {
     padding-top: 5rem;
     page-break-before: always; } }
+
