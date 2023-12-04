@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:root {
+  --primary: rgb(43, 55, 67);
+  --secondary: rgb(87, 142, 169);
+  --ternary: rgb(238, 238, 238);
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--ternary);
+}
+
+.item {
+  transition-property: color;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+}
+
+.item:hover {
+  color: var(--secondary);
+  background-color: var(--ternary);
+}
+
+.img-container {
+  width: 100%;
+}
