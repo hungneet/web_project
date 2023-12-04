@@ -41,7 +41,13 @@ if ($result_cv && $result_cv->num_rows > 0) {
     $objective = $cvData['objective'];
     $img = $cvData['img'];
     $hobby = $cvData['hobby'];
+} else {
+    // Throw 404 error if no cv found
+    header("HTTP/1.0 404 Not Found");
+    echo "<h1>CV does not exist in Database</h1>";
+    exit;
 }
+//Throw 404 error if no cv found
 
 // email addresses
 $emailQuery = "SELECT email FROM emailAddress WHERE cvID = '$cvID'";
@@ -80,4 +86,3 @@ $activityQuery = "SELECT * FROM activity WHERE cvID = '$cvID'";
 $resultActivity = $conn->query($activityQuery);
 
 $conn->close();
-?>
