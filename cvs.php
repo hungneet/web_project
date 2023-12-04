@@ -17,12 +17,12 @@
     ></script>
     <title><?php echo trim(substr($_SERVER['PHP_SELF'], 0, strpos($_SERVER['PHP_SELF'], ".")), '/');
     ?></title>
-    <link rel="stylesheet" href="./navbar.css" />
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./cvs_navbar.css" />
+    <link rel="stylesheet" href="./cvs.css" />
+    <script src="./cvs.js" defer></script>
   </head>
   <body>
-    <?php include "./navbar.html" ?>
+    <?php include "./cvs_navbar.html" ?>
     <div class="container-fluid d-flex justify-content-center flex-column w-100 align-items-center" style="padding: 2%" id="content-container">
       <?php 
         if(isset($_GET['search']) && $_GET['search'] != '') {
