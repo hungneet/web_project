@@ -33,7 +33,7 @@
   </head>
   <body>
     <?php include "./cvs_navbar.html" ?>
-    <div class="container-fluid d-flex justify-content-center flex-column w-100 align-items-center" style="padding: 2%" id="content-container">
+    <div class="container-fluid d-flex justify-content-center flex-column w-100 align-items-center" id="content-container">
       <?php 
         if(isset($_GET['search']) && $_GET['search'] != '') {
           echo "<div class=\"row row-cols-1 w-75 mb-3\">
@@ -74,12 +74,14 @@
                 while($i < 12) {
                     $row = $result->fetch_assoc();
                     if($row == NULL) break;
+                    $image = $row["img"];
+                    if($image == NULL) $image = "./images/avatar.jpg";
                     echo "<div class=\"col\">
                         <a href=\"./cv_template.php?cvID=".$row["id"]."\" class=\"text-decoration-none\" title=\"".$row["fname"]." ".$row["lname"]."\">
                           <div class=\"card shadow-sm item d-flex\">
                               <div class=\"card-body p-0\">
-                                <div class=\"img-container w-100 d-flex flex-column align-items-center\">
-                                  <img class=\" d-lg-block img-fluid\" src=\"./images/avatar.jpg\" alt=\"...\"/>
+                                <div class=\"img-container w-100 d-flex flex-column align-items-center p-2\">
+                                  <img class=\" d-lg-block w-100\" height=\"300px\" src=\"".$image."\" alt=\"".$row["fname"]." ".$row["lname"]."\"/>
                                 </div>
                                 <div class=\"text-container p-3\">
                                   <h5 class=\"card-title\">".$row["fname"]." ". $row["lname"]."</h5>
