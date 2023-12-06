@@ -38,7 +38,7 @@
           <div class="row">
             <div class="col-lg-4 col-md-5">
               <div class="avatar hover-effect bg-white shadow-sm p-1">
-                <img src="<?php echo $img; ?>" width="200" height="200" />
+                <img src="http://localhost<?php echo $img; ?>" width="200" height="200" />
               </div>
             </div>
             <div class="col-lg-8 col-md-7 text-center text-md-start">
@@ -48,7 +48,7 @@
               <p data-aos="fade-left" data-aos-delay="100">
                 <?php echo $title; ?> </p>
               <div class="d-print-none" data-aos="fade-left" data-aos-delay="200">
-                <a class="btn btn-light text-dark shadow-sm mt-1 me-1" href="right-resume.pdf" target="_blank">Download CV</a>
+                <a class="btn btn-light text-dark shadow-sm mt-1 me-1" href="indexPDF.php?cvID=<?php echo $cvID?>" target="_blank" id="btnDownload">Download CV</a>
               </div>
             </div>
           </div>

@@ -1,4 +1,5 @@
 <?php
+    //Data for users account
     $userNames = array(
         "MOcgUez",
         "rBLqq",
@@ -35,9 +36,20 @@
         "7",
         "8",
         "9",
+        "10",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
         "10"
     );
 
+    // Data for work experience
     $companys = array(
         "Apple",
         "Google",
@@ -48,7 +60,18 @@
         "Intel",
         "OpenAI",
         "Amazon",
-        "Microsoft"
+        "Microsoft",
+        //add more
+        "IBM",          
+        "Oracle",
+        "Intel",
+        "Samsung",
+        "Apple",
+        "Rennesas",
+        "Nvidia",
+        "Qualcomm",
+        "Facebook",
+        "Google"
     );
 
     $titleOfWorkExps = array(
@@ -61,7 +84,19 @@
         "Web Designer",
         "Artificial Intelligence Engineer",
         "Product Manager",
-        "SQL Developer");
+        "SQL Developer",
+        //add more
+        "Web Developer",        
+        "Software Engineer",
+        "Data Analyst",
+        "Sales Manager",
+        "Project Manager",
+        "Web Developer",
+        "Software Engineer",
+        "Data Scientist",
+        "Sales Manager",
+        "Web Developer"
+    );
 
     $detailOfWorkExps = array(
         "Developed web applications using PHP and MySQL",
@@ -73,7 +108,19 @@
         "Designed web pages using HTML, CSS, and JavaScript",
         "Designed and implemented machine learning models, optimized algorithms, and improved data quality and reliability",
         "Managed products using Agile methodology",
-        "Developed and maintained databases using SQL");
+        "Developed and maintained databases using SQL",
+        //add more
+        "Designed web pages using HTML, CSS, and JavaScript",
+        "Developed web applications using PHP and MySQL",
+        "Analyzed data for predicting the user demand in buying chips",
+        "Managed sales team and making sales strategies",
+        "Managed projects using Agile methodology",
+        "Designed web pages using HTML, CSS, and JavaScript",
+        "Developed web applications using PHP and MySQL",
+        "Analyzed data using Python and R",
+        "Managed sales team and making sales strategies",
+        "Designed web pages using HTML, CSS, and JavaScript"
+    );
     
     $tartYearofWorkExps = array(
         "2010",
@@ -85,7 +132,19 @@
         "2011",
         "2018",
         "2013",
-        "2014");
+        "2014",
+        //add more
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2016",
+        "2017",
+        "2020",
+        "2019",
+        "2020"
+    );
 
     $endYearofWorkExps = array(
         "2015",
@@ -95,10 +154,23 @@
         "2019",
         "2016",
         "2017",
-        "2022",
+        "2020",
         "2019",
-        "2020");
+        "2020",
+        //add more
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2018",
+        "2019",
+        "2022",
+        "2021",
+        "2022"
+    );
 
+    // Data for social links
     $socialLinks = array(
         "https://facebook.com/john123",
         "https://facebook.com/duke223",
@@ -109,9 +181,22 @@
         "https://linkedin.com/thiery456",
         "https://facebook.com/SamAltman111",
         "https://linkedin.com/fioraSamatha",
-        "https://linkedin.com/weiwei001");
+        "https://linkedin.com/weiwei001",
+        //add more
+        "https://linkedin.com/john123",
+        "https://twitter.com/duke223",
+        "https://facebook.com/mike234",
+        "https://facebook.com/alex312",
+        "https://facebook.com/xiaoLin234",
+        "https://twitter.com/alexander113",
+        "https://twitter.com/thiery456",
+        "https://linkedin.com/SamAltman111",
+        "https://facebook.com/fioraSamatha",
+        "https://facebook.com/weiwei001"
+    );
 
-    $phoneNumbers = array(
+    // Data for phone numbers
+    $phoneNumbers = array(      //15
         "0123456789",
         "1234567890",
         "2345678901",
@@ -121,9 +206,17 @@
         "1234567890",
         "2345678901",
         "3456789012",
-        "4567890123");
+        "4567890123",
+        //add more
+        "5678901234",
+        "6789012345",
+        "7890123456",
+        "8901234567",
+        "9012345678"
+    );
 
-    $languages = array(
+    // Data for languages
+    $languages = array(    //15    
         "English",
         "English",
         "Spanish",
@@ -133,9 +226,17 @@
         "French",
         "English",
         "German",
-        "Chinese");
+        "Chinese",
+        //add more
+        "Chinese",
+        "French",
+        "English",
+        "Spanish",
+        "English"
+    );
 
-    $emailAddresses = array(
+    // Data for email addresses
+    $emailAddresses = array(        //15
         "john123@gmail.com",
         "duke223@gmail.com",
         "mike234@gmail.com",
@@ -145,8 +246,16 @@
         "thiery456@gmail.com",
         "SamAltman111@gmail.com",
         "fioraSamatha@gmail.com",
-        "weiwei001@gmail.com");
+        "weiwei001@gmail.com",
+        //add more
+        "john3122@gmail.com",
+        "duke32345@gmail.com",
+        "mike995@gmail.com",
+        "alex5435@gmail.com",
+        "xiaoLin003@gmail.com"
+    );
     
+    // Data for degrees
     $schools = array(
         "University of California, Berkeley",
         "University of California, Los Angeles",
@@ -207,6 +316,7 @@
         "2009",
         "2009");   
 
+    // Data for cv
     $fnames = array(
         "John",
         "Duke",
@@ -325,8 +435,20 @@
         "7",
         "8",
         "9",
-        "10");
+        "10",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+    );
     
+    // Data for certifications
     $detailOfCertifications = array(
         "Certified Software Developer",
         "Certified Web Developer",
@@ -337,7 +459,19 @@
         "Certified Web Developer",
         "Certified Artificial Intelligence Engineer",
         "Certified Product Manager",
-        "Certified SQL Developer");
+        "Certified SQL Developer",
+        //add more
+        "Certified Web Developer",
+        "Certified Software Developer",
+        "Certified Data Analyst",
+        "Certified Sales Manager",
+        "Certified Project Manager",
+        "Certified Web Developer",
+        "Certified Software Developer",
+        "Certified Data Scientist",
+        "Certified Sales Manager",
+        "Certified Web Developer"
+    );
     
     $yearOfCertifications = array(
         "2010",
@@ -349,7 +483,19 @@
         "2010",
         "2011",
         "2009",
-        "2010");
+        "2010",
+        //add more
+        "2012",
+        "2013",
+        "2012",
+        "2014",
+        "2011",
+        "2010",
+        "2012",
+        "2013",
+        "2011",
+        "2012"
+    );
     
     //Data for awards
     $detailOfAwards = array(
@@ -362,7 +508,19 @@
         "Best Web Developer",
         "Best Artificial Intelligence Engineer",
         "Best Product Manager",
-        "Best SQL Developer");
+        "Best SQL Developer",
+        //add more
+        "Best Web Developer",
+        "Best Software Developer",
+        "Best Data Analyst",
+        "Best Sales Manager",
+        "Best Project Manager",
+        "Best Web Developer",
+        "Best Software Developer",
+        "Best Data Scientist",
+        "Best Sales Manager",
+        "Best Web Developer"
+    );
 
     $yearOfAwards = array(
         "2010",
@@ -374,10 +532,22 @@
         "2010",
         "2011",
         "2009",
-        "2010");
+        "2010",
+        //add more
+        "2012",
+        "2013",
+        "2012",
+        "2014",
+        "2011",
+        "2010",
+        "2012",
+        "2013",
+        "2011",
+        "2012"
+    );
     
     //Data for activities
-    $titleOfActivities = array(
+    $titleOfActivities = array(         //15
         "President of the Computer Science Club",
         "President of the Web Development Club",
         "President of the Data Science Club",
@@ -387,9 +557,17 @@
         "President of the Web Development Club",
         "President of the Artificial Intelligence Club",
         "President of the Product Management Club",
-        "President of the Database Management Club");
+        "President of the Database Management Club",
+        //add more
+        "President of the Web Development Club",
+        "President of the Computer Science Club",
+        "President of the Data Science Club",
+        "President of the Sales Management Club",
+        "President of the Project Management Club"
+
+    );
     
-    $detailOfActivities = array(
+    $detailOfActivities = array(    //15
         "Organized events and activities for the club",
         "Organized events and activities for the club",
         "Organized events and activities for the club",
@@ -399,9 +577,16 @@
         "Organized events and activities for the club",
         "Organized events and activities for the club",
         "Organized events and activities for the club",
-        "Organized events and activities for the club");
+        "Organized events and activities for the club",
+        //add more
+        "Organized events and activities for the club",
+        "Organized events and activities for the club",
+        "Organized events and activities for the club",
+        "Organized events and activities for the club",
+        "Organized events and activities for the club"
+    );
     
-    $startYearOfActivities = array(
+    $startYearOfActivities = array(     //15
         "2006",
         "2006",
         "2008",
@@ -411,9 +596,16 @@
         "2008",
         "2009",
         "2007",
-        "2008");
+        "2008",
+        //add more
+        "2009",
+        "2009",
+        "2011",
+        "2008",
+        "2011"
+    );
 
-    $endYearOfActivities = array(
+    $endYearOfActivities = array(       //15
         "2008",
         "2008",
         "2010",
@@ -423,5 +615,12 @@
         "2010",
         "2011",
         "2009",
-        "2010");
+        "2010",
+        //add more
+        "2011",
+        "2011",
+        "2013",
+        "2010",
+        "2013"
+    );
 ?>
