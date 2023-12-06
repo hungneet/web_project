@@ -91,7 +91,7 @@
         <hr class="d-print-none" />
         <div class="work-experience-section px-3 px-lg-4">
           <h2 class="h3 mb-4">Work Experience</h2>
-          <div class="timeline">'
+          <div class="timeline">
             <?php
             if ($resultWorkExperience->num_rows > 0) {
               while ($workRow = $resultWorkExperience->fetch_assoc()) {
@@ -108,8 +108,8 @@
               echo '<p>No Work experience inforamtion available.</p>';
             }
             ?>
-          </div>;
-        </div>;
+          </div>
+        </div>
         <hr class="d-print-none" />
         <div class="page-break"></div>
         <div class="education-section px-3 px-lg-4 pb-4">
