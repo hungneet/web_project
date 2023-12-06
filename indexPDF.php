@@ -24,8 +24,8 @@ $dompdf->setPaper('A3', 'portrait');
 
 $cvID = $_GET['cvID'];
 $html = file_get_contents('http://localhost/cv_template.php?cvID=' . $cvID . '');
-$btnRemove = '<a class="btn btn-light text-dark shadow-sm mt-1 me-1" href="indexPDF.php?cvID=<?php echo $cvID?>" target="_blank" id="btnDownload">Download CV</a>';
-$html = preg_replace('/<a\b[^>]*>(.*?)<\/a>/i', '', $html);
+$btnRemove = '/<a\b[^>]*class="btn btn-light text-dark shadow-sm mt-1 me-1"[^>]*href="indexPDF.php\?cvID=[^"]*"[^>]*id="btnDownload"[^>]*>.*?<\/a>/i';
+$html = preg_replace($btnRemove, '', $html);
 $dompdf->loadHtml($html);
 
 $dompdf->render();
