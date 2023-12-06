@@ -20,7 +20,7 @@ $options->set('isPhpEnabled', true);
 
 $dompdf = new Dompdf($options);
 
-$dompdf->setPaper('A3', 'portrait');
+$dompdf->setPaper('A4', 'portrait');
 
 $cvID = $_GET['cvID'];
 $html = file_get_contents('http://localhost/cv_template.php?cvID=' . $cvID . '');
