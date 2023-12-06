@@ -21,7 +21,7 @@ function fetchAndImplode($conn, $query, $fieldName)
 }
 
 $cvID = isset($_GET['cvID']) ? $_GET['cvID'] : '';
-$conn = new mysqli('localhost', 'root', '123456', 'cvbuilderDB');
+$conn = new mysqli('localhost', 'root', '', 'cvbuilderDB');
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
