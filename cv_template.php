@@ -222,9 +222,3 @@
 </body>
 
 </html>
-
-<script>
-  function hideDownload() {
-    document.getElementById("btnDownload").style.display = "none";
-  }
-</script>
