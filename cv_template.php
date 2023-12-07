@@ -30,6 +30,8 @@
   <?php
   // Include the script that fetches CV data
   include('fetch_cv_data.php');
+  // Place your folder contains these code in localhost here (ex: 'http://localhost/cvbuilder/' => $folderInLocalHost = 'http://localhost/cvbuilder/')
+  $folderInLocalHost = 'http://localhost/cvbuilder/';
   ?>
   <div class="page-content">
     <div class="container">
@@ -38,7 +40,7 @@
           <div class="row">
             <div class="col-lg-4 col-md-5">
               <div class="avatar hover-effect bg-white shadow-sm p-1">
-                <img src="http://localhost<?php echo $img; ?>" width="200" height="200" />
+                <img src="<?php echo $folderInLocalHost; echo $img; ?>" width="200" height="200" />
               </div>
             </div>
             <div class="col-lg-8 col-md-7 text-center text-md-start">
