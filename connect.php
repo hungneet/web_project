@@ -5,7 +5,7 @@ $password = "";
 $dbname = "cvbuilderdb";
 
 // Create connection
-$conn = new mysqli($servername, $username, NULL, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {

@@ -30,6 +30,8 @@
   <?php
   // Include the script that fetches CV data
   include('fetch_cv_data.php');
+  // Place your folder contains these code in localhost here (ex: 'http://localhost/cvbuilder/' => $folderInLocalHost = 'http://localhost/cvbuilder/')
+  $folderInLocalHost = 'http://localhost/cvbuilder/';
   ?>
   <div class="page-content">
     <div class="container">
@@ -38,7 +40,7 @@
           <div class="row">
             <div class="col-lg-4 col-md-5">
               <div class="avatar hover-effect bg-white shadow-sm p-1">
-                <img src="<?php echo $img; ?>" width="200" height="200" />
+                <img src="<?php echo $folderInLocalHost; echo $img; ?>" width="200" height="200" />
               </div>
             </div>
             <div class="col-lg-8 col-md-7 text-center text-md-start">
@@ -48,7 +50,7 @@
               <p data-aos="fade-left" data-aos-delay="100">
                 <?php echo $title; ?> </p>
               <div class="d-print-none" data-aos="fade-left" data-aos-delay="200">
-                <a class="btn btn-light text-dark shadow-sm mt-1 me-1" href="right-resume.pdf" target="_blank">Download CV</a>
+                <a class="btn btn-light text-dark shadow-sm mt-1 me-1" href="indexPDF.php?cvID=<?php echo $cvID?>" target="_blank" id="btnDownload">Download CV</a>
               </div>
             </div>
           </div>
@@ -91,7 +93,7 @@
         <hr class="d-print-none" />
         <div class="work-experience-section px-3 px-lg-4">
           <h2 class="h3 mb-4">Work Experience</h2>
-          <div class="timeline">'
+          <div class="timeline">
             <?php
             if ($resultWorkExperience->num_rows > 0) {
               while ($workRow = $resultWorkExperience->fetch_assoc()) {
@@ -108,8 +110,8 @@
               echo '<p>No Work experience inforamtion available.</p>';
             }
             ?>
-          </div>;
-        </div>;
+          </div>
+        </div>
         <hr class="d-print-none" />
         <div class="page-break"></div>
         <div class="education-section px-3 px-lg-4 pb-4">
