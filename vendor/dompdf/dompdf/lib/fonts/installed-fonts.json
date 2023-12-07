@@ -1,0 +1,18 @@
+{
+    "poppins": {
+        "600": "poppins_600_272b14b77a21dc5827f4570eff556c8f"
+    },
+    "roboto": {
+        "300": "C:\\xampp\\htdocs\\vendor\\dompdf\\dompdf\/lib\/fonts\/roboto_300_32acfcb296f555e063ebba2be7db9e2f",
+        "normal": "C:\\xampp\\htdocs\\vendor\\dompdf\\dompdf\/lib\/fonts\/roboto_normal_7bc701b343c10631f60048716b96e4f7",
+        "500": "C:\\xampp\\htdocs\\vendor\\dompdf\\dompdf\/lib\/fonts\/roboto_500_5774d6fb05eba3d096525f821dbe4137",
+        "bold": "roboto_bold_8db5cb5d0586c1e891426d13097b1d04"
+    },
+    "font awesome 5 brands": {
+        "normal": "font_awesome_5_brands_normal_5192d5b3779e784abee674333a4ffd3c"
+    },
+    "font awesome 5 free": {
+        "normal": "C:\\xampp\\htdocs\\vendor\\dompdf\\dompdf\/lib\/fonts\/font_awesome_5_free_normal_7ff4a59b44b2f9bee7026c5cdd9560f6",
+        "900": "font_awesome_5_free_900_82a20fcca226caacacd9f9c505794574"
+    }
+}
