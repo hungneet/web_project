@@ -1,13 +1,11 @@
 <?php
 
-include_once("util.php");
-
 $servername = "localhost";
 $DBusername = "root";
 $DBname = "cvbuilderDB";
 $DBpassword= "";// input data password;
 $port= 3306;// input port default: 3306;
-$conn = new mysqli($servername, $DBusername, $DBpassword, "", $port);
+$conn = new mysqli($servername, $DBusername, NULL, "", $port);
 
 // CREATE SCHEMA
 $query = 'create database if not exists cvbuilderDB;';
